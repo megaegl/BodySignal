@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_back"
+                android:icon="@drawable/kembali"
+                android:title="Kembali"/>
+        </menu>
+
+    </item>
+
+
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_tentang_aplikasi"
+            android:icon="@drawable/tentang_aplikasi"
+            android:title="Tentang Aplikasi"/>
+
+        <item
+            android:id="@+id/nav_dataset"
+            android:icon="@drawable/dataset"
+            android:title="Dataset"/>
+
+        <item
+            android:id="@+id/nav_fitur"
+            android:icon="@drawable/fitur"
+            android:title="Fitur"/>
+
+        <item
+            android:id="@+id/nav_model"
+            android:icon="@drawable/model"
+            android:title="Model"/>
+
+        <item
+            android:id="@+id/nav_simulasi_model"
+            android:icon="@drawable/simulasi_model"
+            android:title="Simulasi Model"/>
+
+    </group>
+
+
+</menu>

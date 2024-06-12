@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiturActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_constraintBaseline_toBaselineOf="parent">
+
+        <RelativeLayout
+            android:layout_width="408dp"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="50dp"
+                android:layout_height="200dp"
+                android:layout_marginBottom="80dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="500dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:text="Fitur Dataset"
+                android:textAlignment="center"
+                android:textColor="@color/purple"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7.5"
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:padding="15dp">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="310dp"
+                        android:layout_height="450dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:text="Tipe Data | Bentuk Nilai Fitur | Penjelasan \n \n •	gender 55692 non-null  int64 \n (numeric) (berisi data kelamin pasien) \n \n
+•	hemoglobin 55692 non-null  float64 \n (numeric) (kadar hemogoblin pada pasien) \n \n
+•	height 55692 non-null  int64 \n (numeric) (tinggi pasien) \n \n
+•	weight 55692 non-null  int64 \n (numeric) (berat pasien) \n \n
+•	triglyceride 55692 non-null  float64 \n (numeric) (kadar lemak pada darah) \n \n
+•	gtp 55692 non-null  float64 \n (numeric) (jumlah gtp pada pasien) \n \n
+•	waist 55692 non-null  float64 \n (numeric)  (lingkar pinggang pasien) \n \n
+•	serum creatinine 55692 non-null  float64 (numeric) (kadar kreatinin pada pasein) \n"
+                        android:textColor="@color/purple"
+                        android:textSize="15sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </GridLayout>
+
+        </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
